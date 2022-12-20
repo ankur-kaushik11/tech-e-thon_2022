@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>B-Coders blog - Heaven for bloggers</title>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="img/logo.jpeg" width="94px" alt=""></span>
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#Abt">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Article Search">
+                <button class="btn">Search</button>
+            </form>
+
+        </div>
+
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="m-auto content max-width-1 my-2">
+        <div class="content-left">
+            <h1>The heaven for bloggers</h1>
+            <p>B-Coders Blog is a website, which lets you submit an article which upon approval will be up on our
+                website and you can get a good amount of reach from here!</p>
+            <p>Here you will find wide range of different type of blogs on different Topics.few of them are
+                Photography,Videography,Photo Editing,Motivation etc. </p>
+        </div>
+        <div class="content-right">
+            <img src="img/home.svg" alt="iBlog">
+        </div>
+    </div>
+
+    <div class="max-width-1 m-auto">
+        <hr><br>
+
+        <div class="container">
+            <h2>Publish Your Blog Here</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="Topic">Topic Name</label>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="Author">Author Name</label>
+
+                </div>
+                <label for="data">Write Your Blog Here</label>
+                <div.container.my-3,mx-4>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                
+                                <textarea class="form-control" id="addTxt" rows="3" placeholder="Topic and Author Name">
+                                    </textarea>
+                                    
+                            </div>
+                            <button class="btn btn-primary" id="adbt">Add Blog</button>
+                        </div>
+
+                        <div id="blogs" class="row container-fluid">
+
+                            <div class="noteCard my-2  mx-2 card" style="width: 18rem;">
+
+
+                            </div>
+                        </div>
+
+                    </div>
+        </div>
+        </div.container.my-3>
+
+       
+        </form><br><br>
+
+        <hr>
+    </div>
+
+    </div>
+
+    </div>
+
+
+    </div>
+    <div class="home-articles max-width-1 m-auto font2">
+        <h2>Featured Articles</h2>
+        <div class="year-box adjust-year">
+            
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/3.png" alt="article">
+            </div>
+            <div class="home-article-content font1">
+                <a href="/blogpost.html">
+                    <h3>Photography.</h3>
+
+                    <div>Author Name:- Ankur Kaushik</div>
+                    <span> 17 Sept 2022 | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/1.png" alt="article">
+            </div>
+            <div class="home-article-content font2">
+                <a href="/blogpost.html">
+                    <h3>Videography.</h3>
+                </a>
+
+                <div>Author Name:- Nihal Dhaker</div>
+                <span>26 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/2.png" alt="article">
+            </div>
+            <div class="home-article-content font3">
+                <a href="/blogpost.html">
+                    <h3>Photo Editing.</h3>
+                </a>
+
+                <div>Author Name:- Priyanshu Srivastav</div>
+                <span>29 January | 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/1.png" alt="article">
+            </div>
+            <div class="home-article-content font4">
+                <a href="/blogpost.html">
+                    <h3>Motivation</h3>
+                </a>
+
+                <div>Author Name:- Dhruvil Gautam</div>
+                <span>10 september | 6 min read</span>
+            </div>
+
+
+
+
+
+        </div>
+        <hr>
+        <h2 id="Abt">About US</h2>
+        <section><br>
+            <p>
+                We are the students of JECRC UNIVERSITY, Participating in TECH-A-THON with our team "B-CODERS".<br><BR>
+            <div>
+                <h2>TEAM MEMBERS NAME :-</h2><br>
+                <ol>
+                    <li>Dhruvil Gautam (Lead)</li>
+                    <li>Ankur Kaushik</li>
+                    <li>Priyanshu Srivastav</li>
+                    <li>Nihal Dhaker</li>
+                </ol>
+            </div>
+
+            </p>
+        </section>
+    </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; B-Coders@JECRCuniversity </p>
+        <a href="Home">Credit:- B-Coders</a>
+    </div>
+    <script>
+        console.log("Welcome to blogs app. This is app.js");
+        showBlogs();
+
+        // If we adds a blog, add it to the localStorage
+        let adbt = document.getElementById("adbt");
+        adbt.addEventListener("click", function () {
+            let addTxt = document.getElementById("addTxt");
+            let blogs = localStorage.getItem("blogs");
+            if (blogs == null) {
+                blogsObj = [];
+            } else {
+                blogsObj = JSON.parse(blogs);
+            }
+            blogsObj.push(addTxt.value);
+            localStorage.setItem("blogs", JSON.stringify(blogsObj));
+            addTxt.value = "";
+            
+            showBlogs();
+        });
+
+        // Function to show elements from localStorage
+        function showBlogs() {
+            let blogs = localStorage.getItem("blogs");
+            if (blogs == null) {
+                blogsObj = [];
+            } else {
+                blogsObj = JSON.parse(blogs);
+            }
+            let html = "";
+            blogsObj.forEach(function (element, index) {
+                html += `
+            <div class="blogCard my-2 mx-2 card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Blog ${index + 1}</h5>
+                        <p class="card-text"> ${element}</p>
+                        <button id="${index}"onclick="deleteBlog(this.id)" class="btn btn-primary">Delete Blog</button>
+                    </div>
+                </div>`;
+            });
+            let blogsElm = document.getElementById("blogs");
+            if (blogsObj.length != 0) {
+                blogsElm.innerHTML = html;
+            } else {
+                blogsElm.innerHTML = `!!!!!!!!!!**********NEW BLOGS SECTION**********!!!!!!!!!!`;
+            }
+        }
+
+        // Function to delete a blog
+        function deleteBlog(index) {
+          
+
+            let blogs = localStorage.getItem("blogs");
+            if (blogs == null) {
+                blogsObj = [];
+            } else {
+                blogsObj = JSON.parse(blogs);
+            }
+
+            blogsObj.splice(index, 1);
+            localStorage.setItem("blogs", JSON.stringify(blogsObj));
+            showBlogs();
+        }
+
+
+    </script>
+</body>
+
+</html>
